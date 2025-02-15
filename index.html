@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Animation</title>
+    <title>Sawc</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
     <link href="./tooplate.css" rel="stylesheet">
@@ -17,51 +17,38 @@
 </head>
 <body>
        <!-- Barra de navegação fixa -->
-       <nav class="navbar navbar-expand-lg bg-dark fixed-top shadow-lg">
+       <nav class="navbar bg-transparent fixed-top shadow-lg">
         <div class="container">
             <!-- Logo e título da empresa -->
             <a class="navbar-brand text-white" href="index.html">Sawce <span class="tooplate-green">Company</span></a>
-
-            <!-- Botão para navegação em telas menores -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Links do menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link click-scroll" href="#section_1">Comprar</a>
                     </li>
                 </ul>
-            </div>
         </div>
     </nav>
-
-    <main>
-
+  <main>
+        <!--Video de introdução-->
+      <section>
         <div class="video-container">
             <video autoplay muted loop>
                 <source src="./videos/video1.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
-            <div class="text-overlay">Exclusividade e qualidade</div>
+            <div class="text-overlay">Qualidade e Exclusividade</div>
         </div>
-        <!-- Produtos -->
-        <div class="container text-center">
-            <div class="row">
-              <div class="col" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/home/calça.png" alt="" srcset="">
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/home/moletom.png" alt="" srcset="">
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/home/relogio.png" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-
+      </section>
+        <!-- Produtos -->    
+         <section class="d-flex justify-content-center flex-wrap">
+            <img src="./images/home/calça.png"  data-aos="fade-up" data-aos-duration="1000">
+            <img src="./images/home/moletom.png"  data-aos="fade-up" data-aos-duration="1000">
+            <img src="./images/home/relogio.png"  data-aos="fade-up" data-aos-duration="1000">
+            <img src="./images/home/tenisbranco.png"  data-aos="fade-up" data-aos-duration="1000">
+         </section>
+         <section class="d-flex justify-content-center flex-wrap mb-5">
+                <h3><a class="nav-link" href="./catalog.html">Ver catálogo</a></h3>
+         </section>
         <!-- Formulário de Compra -->
         <section class="hero-section hero-slide d-flex justify-content-center align-items-center" id="section_1" style="height: 100px;">
             <div class="container">
@@ -104,8 +91,6 @@
                 </div>
             </div>
         </section>
-
-    
     </main>
 
     <!-- Rodapé -->
@@ -125,6 +110,7 @@
     </footer>
 
     <!-- Arquivos JavaScript -->
+     <script src="js/navbar.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
