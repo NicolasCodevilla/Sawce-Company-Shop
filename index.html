@@ -17,7 +17,7 @@
 </head>
 <body>
        <!-- Barra de navegação fixa -->
-       <nav class="navbar bg-transparent fixed-top shadow-lg">
+    <nav class="navbar bg-transparent fixed-top shadow-lg">
         <div class="container">
             <!-- Logo e título da empresa -->
             <a class="navbar-brand text-white" href="index.html">Sawce <span class="tooplate-green">Company</span></a>
@@ -28,7 +28,7 @@
                 </ul>
         </div>
     </nav>
-  <main>
+  <ma.in>
         <!--Video de introdução-->
       <section>
         <div class="video-container">
@@ -36,7 +36,10 @@
                 <source src="./videos/video1.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
-            <div class="text-overlay">Qualidade e Exclusividade</div>
+            <div class="text-overlay">Exclusivos de qualidade</div>
+            <div>
+                <button type="submit" class="form-control buy-button" onclick="whatsapp_msg_buy()">Comprar</button>
+            </div>
         </div>
       </section>
         <!-- Produtos -->    
@@ -47,7 +50,7 @@
             <img src="./images/home/tenisbranco.png"  data-aos="fade-up" data-aos-duration="1000">
          </section>
          <section class="d-flex justify-content-center flex-wrap mb-5">
-                <h3><a class="nav-link" href="./catalog.html">Ver catálogo</a></h3>
+                <h3><a class="nav-link" href="./catalogo.html">Ver catálogo</a></h3>
          </section>
         <!-- Formulário de Compra -->
         <section class="hero-section hero-slide d-flex justify-content-center align-items-center" id="section_1" style="height: 100px;">
@@ -117,12 +120,14 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/whatsapp.js"></script>
+    <script src="js/buy_whatsapp.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
 </body>
 </html>
 
